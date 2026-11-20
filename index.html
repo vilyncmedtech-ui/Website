@@ -2,14 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Explore the ViLYNC Medtech intraocular lens portfolio: Monofocal, EDOF and Autofocus Pro IOLs.">
-  <meta name="theme-color" content="#0b2745"><title>Intraocular Lenses | Vilync Medtech (OPC) Pvt. Ltd.</title>
+  <meta name="description" content="Vilync Medtech (OPC) Pvt. Ltd. supplies ophthalmic surgical products, intraocular lenses and diagnostic technologies to eye surgeons, hospitals and clinics.">
+  <meta name="theme-color" content="#0b2745"><title>Vilync Medtech (OPC) Pvt. Ltd. | Ophthalmic Surgical Products</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/products/ophthalmology/iols/iol-catalogue.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .brand { display:flex; align-items:center; gap:12px; min-width:0; color:#10243b; font-family:"Manrope",Arial,sans-serif; font-size:13px; font-weight:800; }
+    .brand span { white-space:nowrap; }
+    @media (max-width:680px) { .brand { gap:8px; font-size:11px; } .brand img { width:118px; } }
+  </style>
 </head>
 <body>
-<header class="iol-header"><a class="iol-brand" href="/" aria-label="Vilync Medtech (OPC) Pvt. Ltd. home"><img src="/assets/vilync-logo.png" alt="Vilync Medtech logo"><span>Vilync Medtech (OPC) Pvt. Ltd.</span></a><nav><a href="/">Home</a><a class="active" href="/products/ophthalmology/iols/">IOL Catalogue</a><a href="/#contact">Contact</a></nav></header>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="./" aria-label="Vilync Medtech (OPC) Pvt. Ltd. home">
+      <img src="assets/vilync-logo.png" alt="Vilync Medtech logo">
+      <span>Vilync Medtech (OPC) Pvt. Ltd.</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="./">Home</a>
+      <a href="products/ophthalmology/iols/">IOL Catalogue</a>
+      <a href="#contact">Contact</a>
+      <a class="nav-cta" href="#enquiry">Request a Quote</a>
+    </nav>
+  </div>
+</header>
 <main>
 <section class="hero" id="home">
   <div class="hero-glow"></div>
@@ -160,6 +179,31 @@
   </div>
 </section>
 </main>
-<footer class="iol-footer"><div class="wrap"><strong>Vilync Medtech (OPC) Pvt. Ltd.</strong><span>Lucknow, Uttar Pradesh, India</span><a href="mailto:info@vilyncmedtech.com">info@vilyncmedtech.com</a><small>© <span id="year"></span> Vilync Medtech. All rights reserved.</small></div></footer>
-<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <strong>Vilync Medtech (OPC) Pvt. Ltd.</strong>
+        <p>Ophthalmic surgical products, intraocular lenses and diagnostic technologies for healthcare professionals.</p>
+      </div>
+      <div class="footer-links">
+        <a href="./">Home</a>
+        <a href="products/ophthalmology/iols/">IOL Catalogue</a>
+        <a href="#about">About us</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-action">
+        <span>CALL / WHATSAPP</span>
+        <a href="tel:+918188886788">+91 8188886788</a>
+        <p><a href="mailto:info@vilyncmedtech.com">info@vilyncmedtech.com</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Vilync Medtech (OPC) Pvt. Ltd. All rights reserved.</span>
+      <span>Lucknow, Uttar Pradesh, India</span>
+    </div>
+  </div>
+</footer>
+<a class="floating-whatsapp" href="https://wa.me/918188886788?text=Hello%20Vilync%20Medtech%2C%20I%20have%20a%20product%20enquiry." target="_blank" rel="noopener" aria-label="Chat with Vilync Medtech on WhatsApp">◉</a>
+<script src="script.js"></script>
 </body></html>
