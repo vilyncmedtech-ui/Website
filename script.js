@@ -10,5 +10,5 @@ document.getElementById("enquiryForm").addEventListener("submit",e=>{e.preventDe
 "\nPhone: "+data.get("phone")+"\nEmail: "+(data.get("email")||"Not provided")+
 "\nAdditional details: "+(data.get("message")||"None"));
 document.getElementById("formStatus").textContent="Your email application should open with the enquiry details. Please review and send the message.";
-window.location.href="mailto:vilyncmedtech@gmail.com?subject="+subject+"&body="+body;
+window.location.href="mailto:info@vilyncmedtech.com?subject="+subject+"&body="+body;
 });
