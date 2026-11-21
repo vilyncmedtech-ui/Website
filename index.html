@@ -1,55 +1,63 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Vilync Medtech (OPC) Pvt. Ltd. supplies ophthalmic surgical products, intraocular lenses and diagnostic technologies to eye surgeons, hospitals and clinics.">
-  <meta name="theme-color" content="#0b2745"><title>Vilync Medtech (OPC) Pvt. Ltd. | Ophthalmic Surgical Products</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Vilync Medtech (OPC) Pvt. Ltd. distributes ophthalmic surgical products, intraocular lenses and diagnostic equipment for eye surgeons, hospitals, clinics and medical colleges.">
+  <meta name="theme-color" content="#0b2745">
+  <title>Vilync Medtech | Medical & Ophthalmic Surgical Solutions</title>
+  <link rel="icon" type="image/png" href="assets/vilync-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <style>
-    .brand { display:flex; align-items:center; gap:12px; min-width:0; color:#10243b; font-family:"Manrope",Arial,sans-serif; font-size:13px; font-weight:800; }
-    .brand span { white-space:nowrap; }
-    @media (max-width:680px) { .brand { gap:8px; font-size:11px; } .brand img { width:118px; } }
+    /* Keep the supplied logo unchanged; place the legal company name beside it. */
+    .site-header .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-shrink: 0;
+      white-space: nowrap;
+    }
+    .site-header .brand-name {
+      display: inline-block;
+      color: #0b2745;
+      font-family: "Manrope", "DM Sans", Arial, sans-serif;
+      font-size: clamp(12px, 1.15vw, 16px);
+      font-weight: 800;
+      letter-spacing: -0.035em;
+      line-height: 1.2;
+      white-space: nowrap;
+    }
+    @media (max-width: 520px) {
+      .site-header .brand {
+        gap: 8px;
+      }
+      .site-header .brand-name {
+        font-size: clamp(10px, 2.8vw, 12px);
+        letter-spacing: -0.045em;
+      }
+    }
   </style>
 
-  <style>
-    .nav-dropdown{position:relative;font-size:13px;font-weight:700;color:#40536a}
-    .nav-dropdown summary{list-style:none;cursor:pointer;padding:8px 0;white-space:nowrap}
-    .nav-dropdown summary::-webkit-details-marker{display:none}
-    .nav-dropdown summary::after{content:"⌄";margin-left:7px;color:#f07822;font-size:15px}
-    .nav-dropdown[open] summary,.nav-dropdown summary:hover{color:#f07822}
-    .nav-submenu{display:none;position:absolute;top:calc(100% + 12px);left:-18px;min-width:205px;padding:9px;background:#fff;border:1px solid #e7edf2;border-radius:6px;box-shadow:0 16px 35px #10243b18;z-index:40}
-    .nav-dropdown[open] .nav-submenu{display:block}
-    .nav-submenu a{display:block;padding:11px 12px;border-radius:4px;color:#243d56;font-size:12px}
-    .nav-submenu a:hover{background:#f3f6f8;color:#e4772c}
-    .iol-product-card{display:block;color:inherit}
-    .iol-product-card .product-link{display:inline-flex;align-items:center;gap:10px;margin-top:12px;color:#e4772c;font-size:12px;font-weight:700}
-    .iol-product-card:focus-visible{outline:3px solid #f07822;outline-offset:3px}
-    @media(max-width:680px){.nav-dropdown{width:100%}.nav-dropdown summary{padding:0}.nav-submenu{position:static;min-width:0;margin-top:8px;box-shadow:none;border-radius:4px;background:#f5f7f9}.nav-submenu a{padding:12px}.nav-dropdown[open] .nav-submenu{display:block}}
-  </style>
 </head>
 <body>
 <header class="site-header">
   <div class="container nav-wrap">
-    <a class="brand" href="./" aria-label="Vilync Medtech (OPC) Pvt. Ltd. home">
+    <a class="brand" href="#home" aria-label="Vilync Medtech (OPC) Pvt. Ltd. home">
       <img src="assets/vilync-logo.png" alt="Vilync Medtech logo">
-      <span>Vilync Medtech (OPC) Pvt. Ltd.</span>
+      <span class="brand-name">Vilync Medtech (OPC) Pvt. Ltd.</span>
     </a>
-    <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
     <nav class="nav" aria-label="Main navigation">
-      <a href="./">Home</a>
-      <details class="nav-dropdown">
-        <summary>Products</summary>
-        <div class="nav-submenu">
-          <a href="products/ophthalmology/iols/">Intraocular Lenses</a>
-        </div>
-      </details>
-      <a href="#contact">Contact</a>
-      <a class="nav-cta" href="#enquiry">Request a Quote</a>
+      <a href="#home">Home</a><a href="#about">About</a><a href="#products">Products</a>
+      <a href="#brands">Our Approach</a><a href="#contact">Contact</a>
+      <a class="nav-cta" href="#enquiry">Make an Enquiry</a>
     </nav>
   </div>
 </header>
+
 <main>
 <section class="hero" id="home">
   <div class="hero-glow"></div>
@@ -109,16 +117,16 @@
     </div>
     <div class="filter-row" role="group" aria-label="Filter product categories">
       <button class="filter active" data-filter="all">All products</button>
-      <button class="filter" data-filter="iol">Intraocular lenses</button>
+      <a class="filter" href="products/ophthalmology/iols/" aria-label="View all Intraocular Lenses">Intraocular lenses</a>
       <button class="filter" data-filter="surgical">Surgical products</button>
       <button class="filter" data-filter="diagnostic">Diagnostic equipment</button>
-      <button class="filter" data-filter="medical">Medical & surgical</button>
+      <button class="filter" data-filter="medical">Surgical consumables</button>
     </div>
     <div class="product-grid">
-      <a class="product-card iol-product-card" data-category="iol" href="products/ophthalmology/iols/" aria-label="Explore the Intraocular Lenses catalogue">
+      <article class="product-card" data-category="iol">
         <div class="product-art art-lens"><span class="art-number">01 / IOL</span><div class="lens-shape"></div><span class="art-caption">INTRAOCULAR LENS</span></div>
-        <div class="product-info"><span class="category-label">OPHTHALMIC IMPLANTS</span><h3>Intraocular Lenses</h3><p>Lens options for different cataract surgery needs, including monofocal, enhanced monofocal, EDOF and premium categories.</p><span class="product-link">Explore IOL Catalogue <span>↗</span></span></div>
-      </a>
+        <div class="product-info"><span class="category-label">OPHTHALMIC IMPLANTS</span><h3>Intraocular Lenses</h3><p>Lens options for different cataract surgery needs, including monofocal, enhanced monofocal, EDOF and multifocal categories.</p><a href="products/ophthalmology/iols/" class="product-link">Explore all Intraocular Lenses <span>↗</span></a></div>
+      </article>
       <article class="product-card" data-category="surgical">
         <div class="product-art art-surgery"><span class="art-number">02 / SURGICAL</span><div class="instrument-shape"></div><span class="art-caption">SURGICAL SOLUTIONS</span></div>
         <div class="product-info"><span class="category-label">OPHTHALMIC SURGERY</span><h3>Surgical Products</h3><p>Ophthalmic implants, instruments, consumables and other products used in eye-care procedures.</p><a href="#enquiry" class="product-link" data-product="Ophthalmic Surgical Products">Enquire about surgical products <span>↗</span></a></div>
@@ -200,31 +208,16 @@
   </div>
 </section>
 </main>
+
 <footer class="footer">
-  <div class="container">
-    <div class="footer-top">
-      <div>
-        <strong>Vilync Medtech (OPC) Pvt. Ltd.</strong>
-        <p>Ophthalmic surgical products, intraocular lenses and diagnostic technologies for healthcare professionals.</p>
-      </div>
-      <div class="footer-links">
-        <a href="./">Home</a>
-        <a href="products/ophthalmology/iols/">IOL Catalogue</a>
-        <a href="#about">About us</a>
-        <a href="#contact">Contact</a>
-      </div>
-      <div class="footer-action">
-        <span>CALL / WHATSAPP</span>
-        <a href="tel:+918188886788">+91 8188886788</a>
-        <p><a href="mailto:info@vilyncmedtech.com">info@vilyncmedtech.com</a></p>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© <span id="year"></span> Vilync Medtech (OPC) Pvt. Ltd. All rights reserved.</span>
-      <span>Lucknow, Uttar Pradesh, India</span>
-    </div>
+  <div class="container footer-top">
+    <div><img src="assets/vilync-logo.png" alt="Vilync Medtech logo"><p>Medical & surgical products distribution, with a focus on ophthalmic solutions.</p></div>
+    <div class="footer-links"><a href="#about">About</a><a href="#products">Products</a><a href="#brands">Our Approach</a><a href="#contact">Contact</a></div>
+    <div class="footer-action"><span>HAVE A REQUIREMENT?</span><a href="#enquiry">Talk to our team ↗</a></div>
   </div>
+  <div class="container footer-bottom"><span>© <span id="year"></span> Vilync Medtech (OPC) Pvt. Ltd. All rights reserved.</span><span>Precision Products. Better Vision. Trusted Partnerships.</span></div>
 </footer>
-<a class="floating-whatsapp" href="https://wa.me/918188886788?text=Hello%20Vilync%20Medtech%2C%20I%20have%20a%20product%20enquiry." target="_blank" rel="noopener" aria-label="Chat with Vilync Medtech on WhatsApp">◉</a>
+<a class="floating-whatsapp" href="https://wa.me/918188886788?text=Hello%20Vilync%20Medtech%2C%20I%20would%20like%20to%20make%20an%20enquiry." target="_blank" rel="noopener" aria-label="WhatsApp Vilync Medtech">◉</a>
 <script src="script.js"></script>
-</body></html>
+</body>
+</html>
