@@ -1,34 +1,193 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Explore the ViLYNC Medtech intraocular lens portfolio: Monofocal, EDOF and Autofocus Pro IOLs.">
-  <meta name="theme-color" content="#0b2745"><title>Intraocular Lenses | Vilync Medtech (OPC) Pvt. Ltd.</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore the ViLYNC Medtech intraocular lens portfolio: Monofocal IOLs, EDOF IOLs and Premium IOLs.">
+  <meta name="theme-color" content="#0b2745">
+  <title>Intraocular Lenses | Vilync Medtech (OPC) Pvt. Ltd.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/products/ophthalmology/iols/iol-catalogue.css">
+  <link rel="stylesheet" href="iol-catalogue.css">
+
+<style>
+  .iol-header nav{display:flex;align-items:center;gap:30px}
+  .iol-nav-dropdown{position:relative;color:#40536a;font-size:13px;font-weight:700}
+  .iol-nav-dropdown summary{list-style:none;cursor:pointer;white-space:nowrap}
+  .iol-nav-dropdown summary::-webkit-details-marker{display:none}
+  .iol-nav-dropdown summary::after{content:"⌄";margin-left:7px;color:#f07822;font-size:15px}
+  .iol-nav-dropdown summary:hover,.iol-nav-dropdown[open] summary{color:#f07822}
+  .iol-nav-submenu{display:none;position:absolute;top:calc(100% + 14px);left:-18px;min-width:205px;padding:9px;background:#fff;border:1px solid #e7edf2;border-radius:6px;box-shadow:0 16px 35px #10243b18;z-index:50}
+  .iol-nav-dropdown:hover .iol-nav-submenu,.iol-nav-dropdown:focus-within .iol-nav-submenu,.iol-nav-dropdown[open] .iol-nav-submenu{display:block}
+  .iol-nav-submenu a{display:block;padding:11px 12px;border-radius:4px;color:#243d56;font-size:12px}
+  .iol-nav-submenu a:hover,.iol-nav-submenu a.active{background:#f3f6f8;color:#e4772c}
+  @media(max-width:680px){.iol-header nav{gap:16px}.iol-nav-dropdown{width:100%}.iol-nav-submenu{position:static;min-width:0;margin-top:8px;box-shadow:none;background:#f5f7f9}.iol-nav-dropdown[open] .iol-nav-submenu{display:block}}
+</style>
+
 </head>
 <body>
-<header class="iol-header"><a class="iol-brand" href="/" aria-label="Vilync Medtech (OPC) Pvt. Ltd. home"><img src="/assets/vilync-logo.png" alt="Vilync Medtech logo"><span>Vilync Medtech (OPC) Pvt. Ltd.</span></a><nav><a href="/">Home</a><a class="active" href="/products/ophthalmology/iols/">IOL Catalogue</a><a href="/#contact">Contact</a></nav></header>
+<header class="iol-header">
+  <a class="iol-brand" href="../../../" aria-label="Vilync Medtech (OPC) Pvt. Ltd. home">
+    <img src="../../../assets/vilync-logo.png" alt="Vilync Medtech logo">
+    <span>Vilync Medtech (OPC) Pvt. Ltd.</span>
+  </a>
+  <nav aria-label="Main navigation">
+    <a href="../../../">Home</a>
+    <details class="iol-nav-dropdown">
+      <summary>Products</summary>
+      <div class="iol-nav-submenu">
+        <a href="./" class="active" aria-current="page">Intraocular Lenses</a>
+      </div>
+    </details>
+    <a href="../../../#contact">Contact</a>
+  </nav>
+</header>
+
 <main>
-  <section class="iol-hero"><div class="wrap"><div class="crumb"><a href="/">Home</a><span>/</span><a href="/#products">Products</a><span>/</span><span>Ophthalmology</span><span>/</span><b>Intraocular Lenses (IOLs)</b></div><p class="eyebrow">OPHTHALMOLOGY · PRODUCT PORTFOLIO</p><h1>Intraocular<em>Lenses</em></h1><p class="intro">Explore the ViLYNC Medtech IOL portfolio across Monofocal, EDOF and Autofocus Pro categories. Select a product to view its available details and request product information.</p><div class="hero-meta"><span>06 PRODUCT ENTRIES</span><i></i><span>3 CATEGORIES</span><i></i><span>PRODUCT INFORMATION & ENQUIRIES</span></div></div></section>
+  <section class="iol-hero">
+    <div class="wrap">
+      <div class="crumb">
+        <a href="../../../">Home</a>
+        <span>/</span>
+        <a href="../../../#products">Products</a>
+        <span>/</span>
+        <span>Ophthalmology</span>
+        <span>/</span>
+        <b>Intraocular Lenses (IOLs)</b>
+      </div>
+      <p class="eyebrow">OPHTHALMOLOGY · PRODUCT PORTFOLIO</p>
+      <h1>Intraocular<em>Lenses</em></h1>
+      <p class="intro">Explore the ViLYNC Medtech IOL portfolio across three categories: Monofocal IOLs, EDOF IOLs and Premium IOLs. Select a product to view its available details and request product information.</p>
+      <div class="hero-meta">
+        <span>06 PRODUCT ENTRIES</span><i></i>
+        <span>3 CATEGORIES</span><i></i>
+        <span>PRODUCT INFORMATION &amp; ENQUIRIES</span>
+      </div>
+    </div>
+  </section>
+
   <section class="catalogue wrap">
-    <div class="category-nav" aria-label="IOL categories"><a href="#monofocal">01&nbsp; Monofocal</a><a href="#edof">02&nbsp; EDOF</a><a href="#autofocus">03&nbsp; Autofocus Pro</a></div>
-    <section class="category-section" id="monofocal"><div class="category-heading"><div><p class="eyebrow">01 / MONOFOCAL IOLS</p><h2>Monofocal <em>IOLs</em></h2></div><p>Clear monofocal lens options in the Spirant and Strident ranges.</p></div><div class="iol-grid">
-      <a class="iol-card" href="/products/ophthalmology/iols/monofocal/spirant-cla/"><div class="card-photo"><img src="/assets/iol/spirant-cla.png" alt="Original Spirant CLA PVB105CLA product packaging" loading="lazy"><span class="photo-tag">ORIGINAL PRODUCT PHOTO</span></div><div class="card-copy"><div class="badges"><span class="badge brand-spirant">SPIRANT / CO-POLYMER</span><span class="badge">MONOFOCAL · CLEAR</span></div><h3>SPIRANT CLA</h3><p class="model">Model: PVB105CLA</p><span class="card-link">View product details <b>↗</b></span></div></a>
-      <a class="iol-card" href="/products/ophthalmology/iols/monofocal/strident-scolorito/"><div class="card-photo"><img src="/assets/iol/strident-scolorito.png" alt="Original Strident Scolorito DRVVB100SCA product packaging" loading="lazy"><span class="photo-tag">ORIGINAL PRODUCT PHOTO</span></div><div class="card-copy"><div class="badges"><span class="badge brand-strident">STRIDENT / HYDROPHOBIC</span><span class="badge">MONOFOCAL · CLEAR</span></div><h3>STRIDENT SCOLORITO</h3><p class="model">Model: DRVVB100SCA</p><span class="card-link">View product details <b>↗</b></span></div></a>
-    </div></section>
-    <section class="category-section" id="edof"><div class="category-heading"><div><p class="eyebrow">02 / EXTENDED DEPTH OF FOCUS</p><h2>EDOF <em>IOLs</em></h2></div><p>Extended depth of focus product entries in the Spirant and Strident ranges.</p></div><div class="iol-grid">
-      <a class="iol-card" href="/products/ophthalmology/iols/edof/spirant-edof/"><div class="card-photo"><img src="/assets/iol/spirant-edof.png" alt="Original Spirant EDOF PVB105CLS product packaging" loading="lazy"><span class="photo-tag">ORIGINAL PRODUCT PHOTO</span></div><div class="card-copy"><div class="badges"><span class="badge brand-spirant">SPIRANT / CO-POLYMER</span><span class="badge">EDOF</span></div><h3>SPIRANT EDOF</h3><p class="model">Model: PVB105CLS</p><span class="card-link">View product details <b>↗</b></span></div></a>
-      <a class="iol-card" href="/products/ophthalmology/iols/edof/strident-edof/"><div class="card-photo pending-photo"><div class="pending-mark"><span>PHOTO PENDING</span><b>STRIDENT EDOF</b><small>Official product image will be added when supplied</small></div><span class="photo-tag">IMAGE AWAITED</span></div><div class="card-copy"><div class="badges"><span class="badge brand-strident">STRIDENT / HYDROPHOBIC</span><span class="badge">EDOF</span></div><h3>STRIDENT EDOF</h3><p class="model">Model: Awaiting confirmation</p><span class="card-link">View product details <b>↗</b></span></div></a>
-    </div></section>
-    <section class="category-section" id="autofocus"><div class="category-heading"><div><p class="eyebrow">03 / AUTOFOCUS PRO</p><h2>Autofocus Pro <em>IOLs</em></h2></div><p>Progressive polyfocal and autofocus product entries in the Spirant and Strident ranges.</p></div><div class="iol-grid">
-      <a class="iol-card" href="/products/ophthalmology/iols/autofocus-pro/spirant-autofocus-pro/"><div class="card-photo"><img src="/assets/iol/spirant-autofocus-pro.png" alt="Original Spirant Autofocus Pro product packaging" loading="lazy"><span class="photo-tag">ORIGINAL PRODUCT PHOTO</span></div><div class="card-copy"><div class="badges"><span class="badge brand-spirant">SPIRANT / CO-POLYMER</span><span class="badge">AUTOFOCUS PRO</span></div><h3>SPIRANT AUTOFOCUS PRO</h3><p class="model">Model: Awaiting confirmation</p><span class="card-link">View product details <b>↗</b></span></div></a>
-      <a class="iol-card" href="/products/ophthalmology/iols/autofocus-pro/strident-autofocus-pro/"><div class="card-photo"><img src="/assets/iol/strident-autofocus-pro.png" alt="Original Strident Autofocus Pro VVB10ASCA product packaging" loading="lazy"><span class="photo-tag">ORIGINAL PRODUCT PHOTO</span></div><div class="card-copy"><div class="badges"><span class="badge brand-strident">STRIDENT / HYDROPHOBIC</span><span class="badge">AUTOFOCUS PRO</span></div><h3>STRIDENT AUTOFOCUS PRO</h3><p class="model">Model: VVB10ASCA</p><span class="card-link">View product details <b>↗</b></span></div></a>
-    </div></section>
+    <div class="category-nav" aria-label="IOL categories">
+      <a href="#monofocal">01&nbsp; Monofocal IOLs</a>
+      <a href="#edof">02&nbsp; EDOF IOLs</a>
+      <a href="#premium">03&nbsp; Premium IOLs</a>
+    </div>
+
+    <section class="category-section" id="monofocal">
+      <div class="category-heading">
+        <div><p class="eyebrow">01 / MONOFOCAL IOLS</p><h2>Monofocal <em>IOLs</em></h2></div>
+        <p>Clear monofocal lens options in the Spirant and Strident ranges.</p>
+      </div>
+      <div class="iol-grid">
+        <a class="iol-card" href="monofocal/spirant-cla/">
+          <div class="card-photo">
+            <img src="../../../assets/iol/spirant-cla.png" alt="Original Spirant CLA PVB105CLA product packaging" loading="lazy">
+            <span class="photo-tag">ORIGINAL PRODUCT PHOTO</span>
+          </div>
+          <div class="card-copy">
+            <div class="badges"><span class="badge brand-spirant">SPIRANT / CO-POLYMER</span><span class="badge">MONOFOCAL · CLEAR</span></div>
+            <h3>SPIRANT CLA</h3>
+            <p class="model">Model: PVB105CLA</p>
+            <span class="card-link">View product details <b>↗</b></span>
+          </div>
+        </a>
+
+        <a class="iol-card" href="monofocal/strident-scolorito/">
+          <div class="card-photo">
+            <img src="../../../assets/iol/strident-scolorito.png" alt="Original Strident Scolorito DRVVB100SCA product packaging" loading="lazy">
+            <span class="photo-tag">ORIGINAL PRODUCT PHOTO</span>
+          </div>
+          <div class="card-copy">
+            <div class="badges"><span class="badge brand-strident">STRIDENT / HYDROPHOBIC</span><span class="badge">MONOFOCAL · CLEAR</span></div>
+            <h3>STRIDENT SCOLORITO</h3>
+            <p class="model">Model: DRVVB100SCA</p>
+            <span class="card-link">View product details <b>↗</b></span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="category-section" id="edof">
+      <div class="category-heading">
+        <div><p class="eyebrow">02 / EXTENDED DEPTH OF FOCUS</p><h2>EDOF <em>IOLs</em></h2></div>
+        <p>Extended depth of focus product entries in the Spirant and Strident ranges.</p>
+      </div>
+      <div class="iol-grid">
+        <a class="iol-card" href="edof/spirant-edof/">
+          <div class="card-photo">
+            <img src="../../../assets/iol/spirant-edof.png" alt="Original Spirant EDOF PVB105CLS product packaging" loading="lazy">
+            <span class="photo-tag">ORIGINAL PRODUCT PHOTO</span>
+          </div>
+          <div class="card-copy">
+            <div class="badges"><span class="badge brand-spirant">SPIRANT / CO-POLYMER</span><span class="badge">EDOF</span></div>
+            <h3>SPIRANT EDOF</h3>
+            <p class="model">Model: PVB105CLS</p>
+            <span class="card-link">View product details <b>↗</b></span>
+          </div>
+        </a>
+
+        <a class="iol-card" href="edof/strident-edof/">
+          <div class="card-photo pending-photo">
+            <div class="pending-mark"><span>PHOTO PENDING</span><b>STRIDENT EDOF</b><small>Official product image will be added when supplied</small></div>
+            <span class="photo-tag">IMAGE AWAITED</span>
+          </div>
+          <div class="card-copy">
+            <div class="badges"><span class="badge brand-strident">STRIDENT / HYDROPHOBIC</span><span class="badge">EDOF</span></div>
+            <h3>STRIDENT EDOF</h3>
+            <p class="model">Model: Awaiting confirmation</p>
+            <span class="card-link">View product details <b>↗</b></span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="category-section" id="premium">
+      <div class="category-heading">
+        <div><p class="eyebrow">03 / PREMIUM IOLS</p><h2>Premium <em>IOLs</em></h2></div>
+        <p>Premium lens options, including Autofocus Pro products in the Spirant and Strident ranges.</p>
+      </div>
+      <div class="iol-grid">
+        <a class="iol-card" href="autofocus-pro/spirant-autofocus-pro/">
+          <div class="card-photo">
+            <img src="../../../assets/iol/spirant-autofocus-pro.png" alt="Original Spirant Autofocus Pro product packaging" loading="lazy">
+            <span class="photo-tag">ORIGINAL PRODUCT PHOTO</span>
+          </div>
+          <div class="card-copy">
+            <div class="badges"><span class="badge brand-spirant">SPIRANT / CO-POLYMER</span><span class="badge">AUTOFOCUS PRO</span></div>
+            <h3>SPIRANT AUTOFOCUS PRO</h3>
+            <p class="model">Model: Awaiting confirmation</p>
+            <span class="card-link">View product details <b>↗</b></span>
+          </div>
+        </a>
+
+        <a class="iol-card" href="autofocus-pro/strident-autofocus-pro/">
+          <div class="card-photo">
+            <img src="../../../assets/iol/strident-autofocus-pro.png" alt="Original Strident Autofocus Pro VVB10ASCA product packaging" loading="lazy">
+            <span class="photo-tag">ORIGINAL PRODUCT PHOTO</span>
+          </div>
+          <div class="card-copy">
+            <div class="badges"><span class="badge brand-strident">STRIDENT / HYDROPHOBIC</span><span class="badge">AUTOFOCUS PRO</span></div>
+            <h3>STRIDENT AUTOFOCUS PRO</h3>
+            <p class="model">Model: VVB10ASCA</p>
+            <span class="card-link">View product details <b>↗</b></span>
+          </div>
+        </a>
+      </div>
+    </section>
+
     <p class="catalogue-note">Technical specifications, available powers, clinical documentation and regulatory details will be published only after verification against official product literature.</p>
   </section>
 </main>
-<footer class="iol-footer"><div class="wrap"><strong>Vilync Medtech (OPC) Pvt. Ltd.</strong><span>Lucknow, Uttar Pradesh, India</span><a href="mailto:info@vilyncmedtech.com">info@vilyncmedtech.com</a><small>© <span id="year"></span> Vilync Medtech. All rights reserved.</small></div></footer>
-<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
-</body></html>
+
+<footer class="iol-footer">
+  <div class="wrap">
+    <strong>Vilync Medtech (OPC) Pvt. Ltd.</strong>
+    <span>Lucknow, Uttar Pradesh, India</span>
+    <a href="mailto:info@vilyncmedtech.com">info@vilyncmedtech.com</a>
+    <small>© <span id="year"></span> Vilync Medtech. All rights reserved.</small>
+  </div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
