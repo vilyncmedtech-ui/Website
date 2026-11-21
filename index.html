@@ -1,15 +1,117 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Explore the ViLYNC Medtech intraocular lens portfolio: Monofocal, EDOF and Autofocus Pro IOLs.">
-  <meta name="theme-color" content="#0b2745"><title>Intraocular Lenses | Vilync Medtech (OPC) Pvt. Ltd.</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Vilync Medtech (OPC) Pvt. Ltd. distributes ophthalmic surgical products, intraocular lenses and diagnostic equipment for eye surgeons, hospitals, clinics and medical colleges.">
+  <meta name="theme-color" content="#0b2745">
+  <title>Vilync Medtech | Medical & Ophthalmic Surgical Solutions</title>
+  <link rel="icon" type="image/png" href="assets/vilync-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/products/ophthalmology/iols/iol-catalogue.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Keep the supplied logo unchanged; place the legal company name beside it. */
+    .site-header .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-shrink: 0;
+      white-space: nowrap;
+    }
+    .site-header .brand-name {
+      display: inline-block;
+      color: #0b2745;
+      font-family: "Manrope", "DM Sans", Arial, sans-serif;
+      font-size: clamp(12px, 1.15vw, 16px);
+      font-weight: 800;
+      letter-spacing: -0.035em;
+      line-height: 1.2;
+      white-space: nowrap;
+    }
+    @media (max-width: 520px) {
+      .site-header .brand {
+        gap: 8px;
+      }
+      .site-header .brand-name {
+        font-size: clamp(10px, 2.8vw, 12px);
+        letter-spacing: -0.045em;
+      }
+    }
+  </style>
+
+
+
+  <style>
+    .nav-dropdown{position:relative}
+    .nav-drop-toggle{border:0;background:transparent;color:#40536a;font:inherit;font-weight:700;cursor:pointer;padding:10px 0}
+    .nav-drop-toggle:hover,.nav-drop-toggle[aria-expanded="true"]{color:#f07822}
+    .nav-menu{display:none;position:absolute;top:calc(100% + 14px);right:-170px;z-index:50;min-width:490px;padding:22px;grid-template-columns:1fr 1fr;gap:22px;background:#fff;border:1px solid #e3e9ee;box-shadow:0 18px 45px #10243b20;border-radius:6px}
+    .nav-dropdown:hover .nav-menu,.nav-dropdown:focus-within .nav-menu,.nav-dropdown.menu-open .nav-menu{display:grid}
+    .nav-menu-group{display:flex;flex-direction:column;gap:11px}
+    .nav-menu-group a{font-size:12px;color:#52657a;line-height:1.4}
+    .nav-menu-group .nav-menu-heading{font-family:Manrope,Arial,sans-serif;color:#0b2745;font-weight:800;font-size:13px;padding-bottom:9px;border-bottom:1px solid #e7edf2}
+    .nav-menu-group a:hover{color:#f07822}
+    .department-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px;margin-top:38px}
+    .department-card{display:block;background:#fff;border:1px solid #e2e8ee;color:inherit;transition:transform .25s,box-shadow .25s}
+    .department-card:hover{transform:translateY(-5px);box-shadow:0 18px 40px #10243b12}
+    .department-art{height:220px;position:relative;overflow:hidden;background:#e8eef2;padding:20px;color:#0b2745;display:flex;flex-direction:column;justify-content:space-between}
+    .ophthalmology-art{background:linear-gradient(135deg,#e9f0f4,#dce7ee)}
+    .general-surgery-art{background:linear-gradient(135deg,#edf0f2,#dfe6eb)}
+    .department-number,.department-art-label{font-size:9px;letter-spacing:.18em;font-weight:800}
+    .department-symbol{position:absolute;left:50%;top:48%;transform:translate(-50%,-50%);font-size:94px;line-height:1;color:#e9782c;font-weight:500}
+    .department-copy{padding:27px 28px 30px}
+    .department-copy h3{font:800 24px Manrope,Arial,sans-serif;margin:9px 0 14px;color:#10243b}
+    .department-copy ul{padding-left:18px;margin:0 0 24px;color:#64758a;font-size:13px;line-height:2}
+    .department-link{font-size:12px;font-weight:800;color:#0b2745}
+    .department-link b{color:#f07822;margin-left:7px}
+    @media(max-width:900px){.nav-menu{right:0}.department-grid{gap:18px}}
+    @media(max-width:680px){
+      .nav-dropdown{width:100%}
+      .nav-drop-toggle{width:100%;text-align:left;padding:0}
+      .nav-menu{position:static;min-width:0;width:100%;margin-top:12px;padding:15px;grid-template-columns:1fr;gap:18px;box-shadow:none;border-radius:4px}
+      .department-grid{grid-template-columns:1fr}
+      .department-art{height:185px}
+      .department-copy{padding:22px}
+    }
+  </style>
+
 </head>
 <body>
-<header class="iol-header"><a class="iol-brand" href="/" aria-label="Vilync Medtech (OPC) Pvt. Ltd. home"><img src="/assets/vilync-logo.png" alt="Vilync Medtech logo"><span>Vilync Medtech (OPC) Pvt. Ltd.</span></a><nav><a href="/">Home</a><a class="active" href="/products/ophthalmology/iols/">IOL Catalogue</a><a href="/#contact">Contact</a></nav></header>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="#home" aria-label="Vilync Medtech (OPC) Pvt. Ltd. home">
+      <img src="assets/vilync-logo.png" alt="Vilync Medtech logo">
+      <span class="brand-name">Vilync Medtech (OPC) Pvt. Ltd.</span>
+    </a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="/#home">Home</a>
+      <a href="/#about">About</a>
+      <div class="nav-dropdown">
+        <button class="nav-drop-toggle" type="button" aria-expanded="false" aria-controls="products-menu">Products <span aria-hidden="true">⌄</span></button>
+        <div class="nav-menu" id="products-menu">
+          <div class="nav-menu-group">
+            <a class="nav-menu-heading" href="/products/ophthalmology/">Ophthalmology</a>
+            <a href="/products/ophthalmology/iols/">Intraocular Lenses</a>
+            <a href="/products/ophthalmology/#ophthalmic-equipment">Ophthalmic Equipment</a>
+            <a href="/products/ophthalmology/#ophthalmic-consumables">Ophthalmic Surgical Consumables</a>
+          </div>
+          <div class="nav-menu-group">
+            <a class="nav-menu-heading" href="/products/general-surgery/">General Surgery</a>
+            <a href="/products/general-surgery/#surgical-equipment">Surgical Equipment</a>
+            <a href="/products/general-surgery/#surgical-consumables">Surgical Consumables</a>
+          </div>
+        </div>
+      </div>
+      <a href="/#brands">Our Approach</a>
+      <a href="/#contact">Contact</a>
+      <a class="nav-cta" href="/#enquiry">Make an Enquiry</a>
+    </nav>
+  </div>
+</header>
+
 <main>
 <section class="hero" id="home">
   <div class="hero-glow"></div>
@@ -64,42 +166,37 @@
 <section class="section products-section" id="products">
   <div class="container">
     <div class="section-heading">
-      <div><p class="eyebrow dark-eyebrow">OUR PRODUCT PORTFOLIO</p><h2>Solutions for every<br><em>step of eye care.</em></h2></div>
-      <p>Explore our key product categories. Contact our team for current availability, specifications, manufacturer details and quotations.</p>
+      <div><p class="eyebrow dark-eyebrow">OUR PRODUCT PORTFOLIO</p><h2>Explore by<br><em>department.</em></h2></div>
+      <p>Browse our portfolio by medical specialty. Each department has its own focused product categories.</p>
     </div>
-    <div class="filter-row" role="group" aria-label="Filter product categories">
-      <button class="filter active" data-filter="all">All products</button>
-      <button class="filter" data-filter="iol">Intraocular lenses</button>
-      <button class="filter" data-filter="surgical">Surgical products</button>
-      <button class="filter" data-filter="diagnostic">Diagnostic equipment</button>
-      <button class="filter" data-filter="medical">Medical & surgical</button>
+    <div class="department-grid">
+      <a class="department-card" href="/products/ophthalmology/">
+        <div class="department-art ophthalmology-art"><span class="department-number">01 / DEPARTMENT</span><span class="department-symbol">◉</span><span class="department-art-label">OPHTHALMOLOGY</span></div>
+        <div class="department-copy">
+          <span class="category-label">EYE CARE & OPHTHALMIC SOLUTIONS</span>
+          <h3>Ophthalmology</h3>
+          <ul>
+            <li>Intraocular Lenses</li>
+            <li>Ophthalmic Equipment</li>
+            <li>Ophthalmic Surgical Consumables</li>
+          </ul>
+          <span class="department-link">Explore Ophthalmology <b>↗</b></span>
+        </div>
+      </a>
+      <a class="department-card" href="/products/general-surgery/">
+        <div class="department-art general-surgery-art"><span class="department-number">02 / DEPARTMENT</span><span class="department-symbol">＋</span><span class="department-art-label">GENERAL SURGERY</span></div>
+        <div class="department-copy">
+          <span class="category-label">SURGICAL TECHNOLOGY & SUPPLIES</span>
+          <h3>General Surgery</h3>
+          <ul>
+            <li>Surgical Equipment</li>
+            <li>Surgical Consumables</li>
+          </ul>
+          <span class="department-link">Explore General Surgery <b>↗</b></span>
+        </div>
+      </a>
     </div>
-    <div class="product-grid">
-      <article class="product-card" data-category="iol">
-        <div class="product-art art-lens"><span class="art-number">01 / IOL</span><div class="lens-shape"></div><span class="art-caption">INTRAOCULAR LENS</span></div>
-        <div class="product-info"><span class="category-label">OPHTHALMIC IMPLANTS</span><h3>Intraocular Lenses</h3><p>Lens options for different cataract surgery needs, including monofocal, enhanced monofocal, EDOF and multifocal categories.</p><a href="#enquiry" class="product-link" data-product="Intraocular Lenses">Enquire about IOLs <span>↗</span></a></div>
-      </article>
-      <article class="product-card" data-category="surgical">
-        <div class="product-art art-surgery"><span class="art-number">02 / SURGICAL</span><div class="instrument-shape"></div><span class="art-caption">SURGICAL SOLUTIONS</span></div>
-        <div class="product-info"><span class="category-label">OPHTHALMIC SURGERY</span><h3>Surgical Products</h3><p>Ophthalmic implants, instruments, consumables and other products used in eye-care procedures.</p><a href="#enquiry" class="product-link" data-product="Ophthalmic Surgical Products">Enquire about surgical products <span>↗</span></a></div>
-      </article>
-      <article class="product-card" data-category="diagnostic">
-        <div class="product-art art-oct"><span class="art-number">03 / DIAGNOSTICS</span><div class="oct-rings"><b></b><b></b><b></b></div><span class="art-caption">OCT & IMAGING</span></div>
-        <div class="product-info"><span class="category-label">DIAGNOSTIC TECHNOLOGY</span><h3>OCT & Imaging Systems</h3><p>Optical Coherence Tomography and ophthalmic imaging equipment. Demonstration enquiries are welcome.</p><a href="#enquiry" class="product-link" data-product="OCT & Imaging Systems">Request a demonstration <span>↗</span></a></div>
-      </article>
-      <article class="product-card" data-category="diagnostic">
-        <div class="product-art art-diagnostic"><span class="art-number">04 / DIAGNOSTICS</span><div class="scan-graphic"><span></span><span></span><span></span><span></span></div><span class="art-caption">CLINICAL ASSESSMENT</span></div>
-        <div class="product-info"><span class="category-label">OPHTHALMIC DIAGNOSTICS</span><h3>Diagnostic Equipment</h3><p>Explore diagnostic technology categories such as optical biometry, corneal topography and other ophthalmic systems.</p><a href="#enquiry" class="product-link" data-product="Ophthalmic Diagnostic Equipment">Enquire about equipment <span>↗</span></a></div>
-      </article>
-      <article class="product-card" data-category="medical">
-        <div class="product-art art-medical"><span class="art-number">05 / MEDICAL</span><div class="medical-cross">+</div><span class="art-caption">MEDICAL & SURGICAL</span></div>
-        <div class="product-info"><span class="category-label">BROADER PORTFOLIO</span><h3>Medical & Surgical Products</h3><p>A broader multi-brand portfolio for healthcare institutions. Ask us about product categories and availability.</p><a href="#enquiry" class="product-link" data-product="Medical & Surgical Products">Discuss your requirement <span>↗</span></a></div>
-      </article>
-      <article class="product-card catalogue-card">
-        <div class="catalogue-content"><span class="catalogue-icon">↗</span><span class="category-label">NEED SOMETHING SPECIFIC?</span><h3>Let’s find the right product for your requirement.</h3><p>Tell us your product, brand or equipment requirement and our team will get back to you.</p><a href="#enquiry" class="button button-dark">Request product information</a></div>
-      </article>
-    </div>
-    <p class="disclaimer">Product categories are indicative. Specific models, brands, specifications, regulatory status and availability will be confirmed individually.</p>
+    <p class="disclaimer">Product models, specifications, regulatory status and availability will be confirmed individually.</p>
   </div>
 </section>
 
@@ -160,6 +257,16 @@
   </div>
 </section>
 </main>
-<footer class="iol-footer"><div class="wrap"><strong>Vilync Medtech (OPC) Pvt. Ltd.</strong><span>Lucknow, Uttar Pradesh, India</span><a href="mailto:info@vilyncmedtech.com">info@vilyncmedtech.com</a><small>© <span id="year"></span> Vilync Medtech. All rights reserved.</small></div></footer>
-<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
-</body></html>
+
+<footer class="footer">
+  <div class="container footer-top">
+    <div><img src="assets/vilync-logo.png" alt="Vilync Medtech logo"><p>Medical & surgical products distribution, with a focus on ophthalmic solutions.</p></div>
+    <div class="footer-links"><a href="#about">About</a><a href="#products">Products</a><a href="#brands">Our Approach</a><a href="#contact">Contact</a></div>
+    <div class="footer-action"><span>HAVE A REQUIREMENT?</span><a href="#enquiry">Talk to our team ↗</a></div>
+  </div>
+  <div class="container footer-bottom"><span>© <span id="year"></span> Vilync Medtech (OPC) Pvt. Ltd. All rights reserved.</span><span>Precision Products. Better Vision. Trusted Partnerships.</span></div>
+</footer>
+<a class="floating-whatsapp" href="https://wa.me/918188886788?text=Hello%20Vilync%20Medtech%2C%20I%20would%20like%20to%20make%20an%20enquiry." target="_blank" rel="noopener" aria-label="WhatsApp Vilync Medtech">◉</a>
+<script src="script.js"></script>
+</body>
+</html>
