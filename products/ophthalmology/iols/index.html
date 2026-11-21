@@ -3,171 +3,95 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Explore the ViLYNC Medtech intraocular lens portfolio: Monofocal IOLs, EDOF IOLs and Premium IOLs.">
+  <meta name="description" content="Ophthalmology product categories from Vilync Medtech (OPC) Pvt. Ltd.">
   <meta name="theme-color" content="#0b2745">
-  <title>Intraocular Lenses | Vilync Medtech (OPC) Pvt. Ltd.</title>
+  <title>Ophthalmology | Vilync Medtech (OPC) Pvt. Ltd.</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="iol-catalogue.css">
+  <link rel="stylesheet" href="../../../styles.css">
+  <style>
+    .dept-page-hero{background:#f3f6f8;padding:64px 0 52px}
+    .dept-page-hero .container{max-width:1180px;margin:auto;width:calc(100% - 48px)}
+    .dept-crumb{font-size:12px;color:#718096;margin-bottom:28px}.dept-crumb a{color:#718096}
+    .dept-kicker{font-size:10px;letter-spacing:.2em;color:#e9782c;font-weight:800}
+    .dept-page-hero h1{font:800 clamp(38px,5vw,58px)/1.08 Manrope,Arial,sans-serif;color:#10243b;margin:15px 0}
+    .dept-page-hero h1 em{font-style:normal;color:#ef8738}
+    .dept-page-hero p{max-width:650px;color:#64758a;line-height:1.8}
+    .dept-content{padding:55px 0 90px}
+    .dept-content .container{max-width:1180px;margin:auto;width:calc(100% - 48px)}
+    .dept-category-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+    .dept-category{background:#fff;border:1px solid #e2e8ee;padding:28px;min-height:245px;display:flex;flex-direction:column;align-items:flex-start}
+    .dept-index{font-size:9px;letter-spacing:.16em;color:#e9782c;font-weight:800}
+    .dept-category h2{font:800 21px Manrope,Arial,sans-serif;color:#10243b;margin:24px 0 10px}
+    .dept-category p{font-size:13px;line-height:1.7;color:#64758a;margin:0 0 22px}
+    .dept-category a{margin-top:auto;color:#0b2745;font-size:12px;font-weight:800}
+    .dept-category a b{color:#e9782c;margin-left:6px}
+    .dept-contact-note{margin-top:30px;padding:20px 24px;background:#edf2f5;color:#64758a;font-size:13px;line-height:1.7}
+    @media(max-width:800px){.dept-category-grid{grid-template-columns:1fr 1fr}}
+    @media(max-width:580px){.dept-category-grid{grid-template-columns:1fr}.dept-page-hero{padding:42px 0}}
+    .nav-dropdown{position:relative}.nav-drop-toggle{border:0;background:transparent;color:#40536a;font:inherit;font-weight:700;cursor:pointer;padding:10px 0}
+    .nav-menu{display:none;position:absolute;top:calc(100% + 14px);right:-170px;z-index:50;min-width:490px;padding:22px;grid-template-columns:1fr 1fr;gap:22px;background:#fff;border:1px solid #e3e9ee;box-shadow:0 18px 45px #10243b20;border-radius:6px}
+    .nav-dropdown:hover .nav-menu,.nav-dropdown:focus-within .nav-menu,.nav-dropdown.menu-open .nav-menu{display:grid}
+    .nav-menu-group{display:flex;flex-direction:column;gap:11px}.nav-menu-group a{font-size:12px;color:#52657a}.nav-menu-group .nav-menu-heading{font-family:Manrope,Arial,sans-serif;color:#0b2745;font-weight:800;font-size:13px;padding-bottom:9px;border-bottom:1px solid #e7edf2}
+    @media(max-width:680px){.nav-dropdown{width:100%}.nav-drop-toggle{width:100%;text-align:left;padding:0}.nav-menu{position:static;min-width:0;width:100%;margin-top:12px;padding:15px;grid-template-columns:1fr;gap:18px;box-shadow:none}}
+  </style>
 </head>
 <body>
-<header class="iol-header">
-  <a class="iol-brand" href="../../../" aria-label="Vilync Medtech (OPC) Pvt. Ltd. home">
-    <img src="../../../assets/vilync-logo.png" alt="Vilync Medtech logo">
-    <span>Vilync Medtech (OPC) Pvt. Ltd.</span>
-  </a>
-  <nav aria-label="Main navigation">
-    <a href="../../../">Home</a>
-    <a href="../../../#products">Products</a>
-    <a href="../../../#contact">Contact</a>
-  </nav>
-</header>
-
-<main>
-  <section class="iol-hero">
-    <div class="wrap">
-      <div class="crumb">
-        <a href="../../../">Home</a>
-        <span>/</span>
-        <a href="../../../#products">Products</a>
-        <span>/</span>
-        <span>Ophthalmology</span>
-        <span>/</span>
-        <b>Intraocular Lenses (IOLs)</b>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="/" aria-label="Vilync Medtech (OPC) Pvt. Ltd. home">
+      <img src="../../assets/vilync-logo.png" alt="Vilync Medtech logo">
+      <span class="brand-name">Vilync Medtech (OPC) Pvt. Ltd.</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="/">Home</a><a href="/#about">About</a>
+      <div class="nav-dropdown">
+        <button class="nav-drop-toggle" type="button" aria-expanded="false" aria-controls="products-menu">Products <span aria-hidden="true">⌄</span></button>
+        <div class="nav-menu" id="products-menu">
+          <div class="nav-menu-group"><a class="nav-menu-heading" href="/products/ophthalmology/">Ophthalmology</a><a href="/products/ophthalmology/iols/">Intraocular Lenses</a><a href="/products/ophthalmology/#ophthalmic-equipment">Ophthalmic Equipment</a><a href="/products/ophthalmology/#ophthalmic-consumables">Ophthalmic Surgical Consumables</a></div>
+          <div class="nav-menu-group"><a class="nav-menu-heading" href="/products/general-surgery/">General Surgery</a><a href="/products/general-surgery/#surgical-equipment">Surgical Equipment</a><a href="/products/general-surgery/#surgical-consumables">Surgical Consumables</a></div>
+        </div>
       </div>
-      <p class="eyebrow">OPHTHALMOLOGY · PRODUCT PORTFOLIO</p>
-      <h1>Intraocular<em>Lenses</em></h1>
-      <p class="intro">Explore the ViLYNC Medtech IOL portfolio across three categories: Monofocal IOLs, EDOF IOLs and Premium IOLs. Select a product to view its available details and request product information.</p>
-      <div class="hero-meta">
-        <span>06 PRODUCT ENTRIES</span><i></i>
-        <span>3 CATEGORIES</span><i></i>
-        <span>PRODUCT INFORMATION &amp; ENQUIRIES</span>
-      </div>
-    </div>
-  </section>
-
-  <section class="catalogue wrap">
-    <div class="category-nav" aria-label="IOL categories">
-      <a href="#monofocal">01&nbsp; Monofocal IOLs</a>
-      <a href="#edof">02&nbsp; EDOF IOLs</a>
-      <a href="#premium">03&nbsp; Premium IOLs</a>
-    </div>
-
-    <section class="category-section" id="monofocal">
-      <div class="category-heading">
-        <div><p class="eyebrow">01 / MONOFOCAL IOLS</p><h2>Monofocal <em>IOLs</em></h2></div>
-        <p>Standard and advanced monofocal lenses</p>
-      </div>
-      <div class="iol-grid">
-        <a class="iol-card" href="monofocal/spirant-cla/">
-          <div class="card-photo">
-            <img src="../../../assets/iol/spirant-cla.png" alt="Original Spirant CLA PVB105CLA product packaging" loading="lazy">
-            <span class="photo-tag">ORIGINAL PRODUCT PHOTO</span>
-          </div>
-          <div class="card-copy">
-            <div class="badges"><span class="badge brand-spirant">SPIRANT / CO-POLYMER</span><span class="badge">MONOFOCAL · CLEAR</span></div>
-            <h3>SPIRANT CLA</h3>
-            <p class="model">Model: PVB105CLA</p>
-            <span class="card-link">View product details <b>↗</b></span>
-          </div>
-        </a>
-
-        <a class="iol-card" href="monofocal/strident-scolorito/">
-          <div class="card-photo">
-            <img src="../../../assets/iol/strident-scolorito.png" alt="Original Strident Scolorito DRVVB100SCA product packaging" loading="lazy">
-            <span class="photo-tag">ORIGINAL PRODUCT PHOTO</span>
-          </div>
-          <div class="card-copy">
-            <div class="badges"><span class="badge brand-strident">STRIDENT / HYDROPHOBIC</span><span class="badge">MONOFOCAL · CLEAR</span></div>
-            <h3>STRIDENT SCOLORITO</h3>
-            <p class="model">Model: DRVVB100SCA</p>
-            <span class="card-link">View product details <b>↗</b></span>
-          </div>
-        </a>
-      </div>
-    </section>
-
-    <section class="category-section" id="edof">
-      <div class="category-heading">
-        <div><p class="eyebrow">02 / EXTENDED DEPTH OF FOCUS</p><h2>EDOF <em>IOLs</em></h2></div>
-        <p>Extended Depth of Focus lenses</p>
-      </div>
-      <div class="iol-grid">
-        <a class="iol-card" href="edof/spirant-edof/">
-          <div class="card-photo">
-            <img src="../../../assets/iol/spirant-edof.png" alt="Original Spirant EDOF PVB105CLS product packaging" loading="lazy">
-            <span class="photo-tag">ORIGINAL PRODUCT PHOTO</span>
-          </div>
-          <div class="card-copy">
-            <div class="badges"><span class="badge brand-spirant">SPIRANT / CO-POLYMER</span><span class="badge">EDOF</span></div>
-            <h3>SPIRANT EDOF</h3>
-            <p class="model">Model: PVB105CLS</p>
-            <span class="card-link">View product details <b>↗</b></span>
-          </div>
-        </a>
-
-        <a class="iol-card" href="edof/strident-edof/">
-          <div class="card-photo pending-photo">
-            <div class="pending-mark"><span>PHOTO PENDING</span><b>STRIDENT EDOF</b><small>Official product image will be added when supplied</small></div>
-            <span class="photo-tag">IMAGE AWAITED</span>
-          </div>
-          <div class="card-copy">
-            <div class="badges"><span class="badge brand-strident">STRIDENT / HYDROPHOBIC</span><span class="badge">EDOF</span></div>
-            <h3>STRIDENT EDOF</h3>
-            <p class="model">Model: Awaiting confirmation</p>
-            <span class="card-link">View product details <b>↗</b></span>
-          </div>
-        </a>
-      </div>
-    </section>
-
-    <section class="category-section" id="premium">
-      <div class="category-heading">
-        <div><p class="eyebrow">03 / PREMIUM IOLS</p><h2>Premium <em>IOLs</em></h2></div>
-        <p>Advanced progressive and premium vision solutions</p>
-      </div>
-      <div class="iol-grid">
-        <a class="iol-card" href="autofocus-pro/spirant-autofocus-pro/">
-          <div class="card-photo">
-            <img src="../../../assets/iol/spirant-autofocus-pro.png" alt="Original Spirant Autofocus Pro product packaging" loading="lazy">
-            <span class="photo-tag">ORIGINAL PRODUCT PHOTO</span>
-          </div>
-          <div class="card-copy">
-            <div class="badges"><span class="badge brand-spirant">SPIRANT / CO-POLYMER</span><span class="badge">AUTOFOCUS PRO</span></div>
-            <h3>SPIRANT AUTOFOCUS PRO</h3>
-            <p class="model">Model: Awaiting confirmation</p>
-            <span class="card-link">View product details <b>↗</b></span>
-          </div>
-        </a>
-
-        <a class="iol-card" href="autofocus-pro/strident-autofocus-pro/">
-          <div class="card-photo">
-            <img src="../../../assets/iol/strident-autofocus-pro.png" alt="Original Strident Autofocus Pro VVB10ASCA product packaging" loading="lazy">
-            <span class="photo-tag">ORIGINAL PRODUCT PHOTO</span>
-          </div>
-          <div class="card-copy">
-            <div class="badges"><span class="badge brand-strident">STRIDENT / HYDROPHOBIC</span><span class="badge">AUTOFOCUS PRO</span></div>
-            <h3>STRIDENT AUTOFOCUS PRO</h3>
-            <p class="model">Model: VVB10ASCA</p>
-            <span class="card-link">View product details <b>↗</b></span>
-          </div>
-        </a>
-      </div>
-    </section>
-
-    <p class="catalogue-note">Technical specifications, available powers, clinical documentation and regulatory details will be published only after verification against official product literature.</p>
-  </section>
-</main>
-
-<footer class="iol-footer">
-  <div class="wrap">
-    <strong>Vilync Medtech (OPC) Pvt. Ltd.</strong>
-    <span>Lucknow, Uttar Pradesh, India</span>
-    <a href="mailto:info@vilyncmedtech.com">info@vilyncmedtech.com</a>
-    <small>© <span id="year"></span> Vilync Medtech. All rights reserved.</small>
+      <a href="/#brands">Our Approach</a><a href="/#contact">Contact</a><a class="nav-cta" href="/#enquiry">Make an Enquiry</a>
+    </nav>
   </div>
-</footer>
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</header>
+<main>
+<section class="dept-page-hero">
+  <div class="container">
+    <div class="dept-crumb"><a href="/">Home</a> / <a href="/#products">Products</a> / <b>Ophthalmology</b></div>
+    <span class="dept-kicker">PRODUCT DEPARTMENT</span>
+    <h1>Ophthalmology</h1>
+    <p>Explore ophthalmic products and technologies across intraocular lenses, ophthalmic equipment and ophthalmic surgical consumables.</p>
+  </div>
+</section>
+<section class="dept-content">
+  <div class="container">
+    <div class="dept-category-grid">
+      <article class="dept-category" id="intraocular-lenses">
+      <span class="dept-index">01 / OPHTHALMOLOGY</span>
+      <h2>Intraocular Lenses</h2>
+      <p>Monofocal, EDOF and Premium IOL categories for cataract and vision correction needs.</p>
+      <a href="/products/ophthalmology/iols/">Explore category <b>↗</b></a>
+    </article><article class="dept-category" id="ophthalmic-equipment">
+      <span class="dept-index">02 / OPHTHALMOLOGY</span>
+      <h2>Ophthalmic Equipment</h2>
+      <p>Ophthalmic diagnostic and clinical equipment. Contact us for product range and demonstrations.</p>
+      <a href="/#enquiry">Explore category <b>↗</b></a>
+    </article><article class="dept-category" id="ophthalmic-consumables">
+      <span class="dept-index">03 / OPHTHALMOLOGY</span>
+      <h2>Ophthalmic Surgical Consumables</h2>
+      <p>Consumables used in ophthalmic surgical procedures. Contact us for available product information.</p>
+      <a href="/#enquiry">Explore category <b>↗</b></a>
+    </article>
+    </div>
+    <div class="dept-contact-note">For product range details, current availability, specifications and demonstrations, please contact the ViLYNC Medtech team.</div>
+  </div>
+</section>
+</main>
+<footer class="footer"><div class="container footer-bottom"><span>© <span id="year"></span> Vilync Medtech (OPC) Pvt. Ltd.</span><span><a href="/#contact">Contact our team</a></span></div></footer>
+<script src="../../script.js"></script>
 </body>
 </html>
