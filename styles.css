@@ -8,3 +8,178 @@
 .distribution-gif{display:block;width:100%;height:330px;object-fit:contain;object-position:center;background:#061f3a}
 @media(max-width:900px){.distribution-gif{height:290px}}
 @media(max-width:680px){.distribution-gif{height:240px}}
+
+
+/* Mobile-only responsive corrections: preserve desktop styling. */
+@media (max-width: 680px) {
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .container {
+    width: min(100% - 32px, 560px);
+  }
+
+  .site-header .nav-wrap,
+  .site-header .brand,
+  .hero-grid,
+  .hero-copy,
+  .hero-visual,
+  .visual-frame {
+    min-width: 0;
+  }
+
+  .site-header .brand {
+    flex: 1 1 auto;
+    gap: 7px;
+    white-space: normal;
+    overflow: hidden;
+  }
+
+  .site-header .brand img {
+    flex: 0 1 132px;
+    width: min(34vw, 132px);
+    max-width: 132px;
+    height: 50px;
+  }
+
+  .site-header .brand-name {
+    white-space: normal;
+    max-width: 145px;
+    font-size: clamp(10px, 2.8vw, 12px);
+    line-height: 1.2;
+  }
+
+  .menu-toggle {
+    flex: 0 0 auto;
+    margin-left: 8px;
+  }
+
+  .hero-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .hero-copy,
+  .hero-visual {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero h1 {
+    max-width: 100%;
+    font-size: clamp(30px, 8vw, 38px);
+    line-height: 1.12;
+    letter-spacing: -0.045em;
+    overflow-wrap: break-word;
+    word-break: normal;
+  }
+
+  .hero-lead {
+    width: 100%;
+    max-width: 100%;
+    font-size: 15px;
+    overflow-wrap: break-word;
+  }
+
+  .hero-actions {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .hero-actions .button {
+    flex: 1 1 145px;
+    min-width: 0;
+    padding: 13px 14px;
+    gap: 9px;
+  }
+
+  .hero-proof {
+    align-items: flex-start;
+    min-width: 0;
+  }
+
+  .hero-proof > span:last-child {
+    min-width: 0;
+    overflow-wrap: break-word;
+  }
+
+  .hero-visual {
+    margin: 0;
+  }
+
+  .visual-frame {
+    width: 100%;
+    padding: 12px;
+    transform: none;
+  }
+
+  .visual-art,
+  .distribution-art {
+    width: 100%;
+    height: clamp(180px, 58vw, 240px);
+  }
+
+  .distribution-gif {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  .visual-top,
+  .visual-bottom {
+    gap: 8px;
+    font-size: 8px;
+    letter-spacing: 0.12em;
+  }
+
+  .trust-inner,
+  .section-heading,
+  .footer-bottom {
+    min-width: 0;
+  }
+
+  .section-heading > *,
+  .two-col > *,
+  .feature-grid > *,
+  .enquiry-grid > *,
+  .contact-grid > * {
+    min-width: 0;
+  }
+
+  .department-card,
+  .department-copy,
+  .enquiry-form {
+    min-width: 0;
+  }
+
+  .floating-whatsapp {
+    width: 48px;
+    height: 48px;
+    right: 14px;
+    bottom: 14px;
+  }
+}
+
+@media (max-width: 380px) {
+  .site-header .brand img {
+    flex-basis: 108px;
+    width: 108px;
+  }
+
+  .site-header .brand-name {
+    max-width: 118px;
+    font-size: 10px;
+  }
+
+  .hero h1 {
+    font-size: clamp(28px, 8vw, 32px);
+  }
+
+  .hero-actions .button {
+    flex-basis: 100%;
+  }
+}
