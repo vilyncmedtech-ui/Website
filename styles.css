@@ -2,21 +2,9 @@
 @media(max-width:900px){.nav{gap:16px}.hero-grid{gap:30px}.hero-side-note{display:none}.two-col,.feature-grid,.enquiry-grid,.contact-grid{gap:45px}.product-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:680px){.container{width:min(100% - 34px,560px)}.site-header{height:70px}.brand img{width:160px;height:55px}.menu-toggle{display:block}.nav{display:none;position:absolute;left:0;right:0;top:70px;background:#fff;padding:20px 24px 25px;box-shadow:0 15px 25px #10243b18;flex-direction:column;align-items:stretch;gap:16px}.nav.open{display:flex}.nav .nav-cta{text-align:center}.hero{padding:65px 0 55px}.hero-grid{grid-template-columns:1fr;gap:42px}.hero h1{font-size:44px}.hero-lead{font-size:15px}.hero-visual{max-width:460px}.visual-art{height:260px}.trust-inner{flex-wrap:wrap;justify-content:center;padding:17px 0;gap:10px 15px;font-size:8px}.trust-inner i{display:none}.section{padding:70px 0}.two-col,.feature-grid,.enquiry-grid,.contact-grid{grid-template-columns:1fr;gap:25px}.section-heading{display:block}.section-heading>p{margin-top:22px}.product-grid{grid-template-columns:1fr}.product-art{height:205px}.feature-band{padding:65px 0}.audience-grid{grid-template-columns:1fr 1fr}.audience-grid>div{border-bottom:1px solid #e3e9ee;padding:20px!important}.audience-grid>div:nth-child(2){border-right:0}.audience-grid>div:nth-child(3),.audience-grid>div:nth-child(4){border-bottom:0}.enquiry-section{padding:65px 0}.enquiry-copy h2{font-size:38px}.enquiry-form{padding:22px 17px}.form-row{grid-template-columns:1fr;gap:0}.contact-details{gap:22px}.footer-top{grid-template-columns:1fr 1fr;gap:25px}.footer-top>div:first-child{grid-column:1/-1}.footer-bottom{display:grid;gap:8px}.floating-whatsapp{right:15px;bottom:15px}}
 
-/* Animated ophthalmic distribution scene */
-.distribution-art{background:radial-gradient(ellipse at 50% 54%,#174a70 0%,#0c2c49 52%,#071d33 100%);isolation:isolate}
-.distribution-art:before{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 30%,#49bff51a 50%,transparent 70%);animation:supplySweep 7s ease-in-out infinite;pointer-events:none}
-.distribution-scene{position:relative;width:100%;height:100%;max-height:330px;z-index:1;overflow:visible}
-.route-line{stroke-dasharray:8 10;animation:routeFlow 3.5s linear infinite}
-.delivery-van{animation:vanDelivery 6s ease-in-out infinite;transform-origin:center}
-.supply-products{animation:productFloat 4.5s ease-in-out infinite}
-.clinic-mark{animation:clinicGlow 3.8s ease-in-out infinite}
-.handoff-pulse{transform-origin:522px 218px;animation:handoffPulse 2s ease-out infinite}
-.sparkles{animation:sparkle 2.8s ease-in-out infinite alternate}
-@keyframes routeFlow{to{stroke-dashoffset:-72}}
-@keyframes vanDelivery{0%,12%{transform:translateX(-18px);opacity:.75}55%,75%{transform:translateX(8px);opacity:1}100%{transform:translateX(-18px);opacity:.75}}
-@keyframes productFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
-@keyframes clinicGlow{0%,100%{filter:drop-shadow(0 0 2px #38bdf455)}50%{filter:drop-shadow(0 0 13px #38bdf4aa)}}
-@keyframes handoffPulse{0%{opacity:.85;transform:scale(.7)}100%{opacity:0;transform:scale(1.8)}}
-@keyframes supplySweep{0%,100%{transform:translateX(-35%);opacity:.25}50%{transform:translateX(35%);opacity:.8}}
-@keyframes sparkle{from{opacity:.35}to{opacity:1}}
-@media(prefers-reduced-motion:reduce){.distribution-art:before,.route-line,.delivery-van,.supply-products,.clinic-mark,.handoff-pulse,.sparkles{animation:none!important}}
+
+/* Original uploaded Vilync distribution animation */
+.distribution-art{padding:0;background:#061f3a;overflow:hidden}
+.distribution-gif{display:block;width:100%;height:330px;object-fit:contain;object-position:center;background:#061f3a}
+@media(max-width:900px){.distribution-gif{height:290px}}
+@media(max-width:680px){.distribution-gif{height:240px}}
