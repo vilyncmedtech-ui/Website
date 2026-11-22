@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ViLYNC Medtech is expanding its General Surgery portfolio. Contact our team to discuss your surgical product or equipment requirement.">
+  <meta name="theme-color" content="#0b2745">
+  <title>General Surgery | Coming Soon | Vilync Medtech</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--navy:#0b2745;--ink:#142b43;--muted:#64758a;--orange:#f07822;--line:#e4eaf0;--paper:#f5f8fb;--white:#fff}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",Arial,sans-serif;-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}
+    .site-header{min-height:78px;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:12px max(5vw,24px);gap:24px}
+    .brand{display:flex;align-items:center;gap:13px;font-family:Manrope,Arial,sans-serif;font-weight:800;font-size:14px;white-space:nowrap}
+    .brand img{width:52px;height:52px;object-fit:contain}
+    .nav{display:flex;align-items:center;gap:30px;font-size:13px;font-weight:700;color:#52647a}
+    .nav a:hover,.nav a.active{color:var(--orange)}
+    .nav .cta{padding:12px 18px;background:var(--navy);color:#fff;border-radius:5px}
+    .hero{position:relative;isolation:isolate;overflow:hidden;background:linear-gradient(118deg,#0b2745 0%,#123b60 68%,#1a5270 100%);color:#fff;padding:68px 24px 76px}
+    .hero:before,.hero:after{content:"";position:absolute;z-index:-1;border:1px solid #ffffff18;border-radius:50%;pointer-events:none}
+    .hero:before{width:560px;height:560px;right:-160px;top:-300px;box-shadow:0 0 0 55px #ffffff08,0 0 0 110px #ffffff05}
+    .hero:after{width:340px;height:340px;left:-220px;bottom:-250px;box-shadow:0 0 0 45px #ffffff06}
+    .wrap{width:min(1080px,100%);margin:auto;position:relative}
+    .crumb{display:flex;flex-wrap:wrap;gap:10px;align-items:center;color:#c2d2e1;font-size:12px;margin-bottom:32px}
+    .crumb a:hover{color:#fff}.crumb b{color:#fff}
+    .eyebrow{font-size:11px;letter-spacing:.17em;font-weight:800;color:#f3a276;margin:0 0 18px}
+    .hero h1{font:800 clamp(38px,6vw,66px)/1.07 Manrope,Arial,sans-serif;letter-spacing:-.055em;margin:0;max-width:800px}
+    .hero h1 em{font-style:normal;color:#f3a276}
+    .intro{max-width:690px;color:#d4e0eb;font-size:16px;line-height:1.85;margin:22px 0 0}
+    .hero-meta{display:flex;gap:13px;align-items:center;flex-wrap:wrap;margin-top:32px;color:#d2dfeb;font-size:10px;letter-spacing:.12em;font-weight:700}
+    .hero-meta i{width:4px;height:4px;border-radius:50%;background:#f3a276}
+    .coming-section{padding:62px 24px 76px}
+    .coming-card{width:min(820px,100%);margin:auto;background:#fff;border:1px solid var(--line);border-radius:14px;padding:clamp(28px,5vw,52px);text-align:center;box-shadow:0 16px 48px #0b27450b}
+    .icon-wrap{width:66px;height:66px;border-radius:18px;margin:0 auto 22px;background:#edf3f8;color:var(--navy);display:grid;place-items:center;font-size:30px}
+    .status{display:inline-flex;align-items:center;gap:8px;padding:8px 13px;border-radius:30px;background:#fff3e9;color:#b85b1b;font-size:10px;letter-spacing:.12em;font-weight:800}
+    .status:before{content:"";width:7px;height:7px;border-radius:50%;background:var(--orange)}
+    .coming-card h2{font:800 clamp(27px,4vw,38px)/1.2 Manrope,Arial,sans-serif;letter-spacing:-.04em;color:var(--navy);margin:20px 0 13px}
+    .coming-card>p{max-width:610px;margin:0 auto;color:var(--muted);font-size:14px;line-height:1.85}
+    .contact-prompt{margin:30px auto 0;padding:22px 20px;background:#f5f8fb;border:1px solid #e8eef3;border-radius:9px;max-width:650px}
+    .contact-prompt strong{display:block;color:var(--navy);font:800 15px Manrope,Arial,sans-serif;margin-bottom:7px}
+    .contact-prompt p{margin:0;color:var(--muted);font-size:12px;line-height:1.7}
+    .actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:25px}
+    .button{min-height:46px;display:inline-flex;align-items:center;justify-content:center;padding:13px 20px;border-radius:5px;font-size:12px;font-weight:800;transition:transform .2s,background .2s}
+    .button:hover{transform:translateY(-2px)}
+    .button-primary{background:var(--orange);color:#fff}
+    .button-secondary{background:#fff;color:var(--navy);border:1px solid #cbd6df}
+    .footer{background:#081f37;color:#d3dfeb;padding:26px 24px}
+    .footer-inner{width:min(1080px,100%);margin:auto;display:flex;justify-content:space-between;align-items:center;gap:20px;font-size:11px}
+    .footer a{color:#fff;font-weight:700}.footer a:hover{color:#f3a276}
+    @media(max-width:700px){
+      .site-header{padding:10px 16px;gap:12px;flex-wrap:wrap}
+      .brand{font-size:12px;white-space:normal;min-width:0}
+      .brand img{width:44px;height:44px;flex:0 0 44px}
+      .nav{width:100%;justify-content:space-between;gap:10px;flex-wrap:wrap;padding-top:7px;font-size:12px}
+      .nav .cta{padding:9px 12px}
+      .hero{padding:45px 20px 52px}
+      .crumb{margin-bottom:25px}
+      .intro{font-size:14px}
+      .coming-section{padding:38px 16px 52px}
+      .coming-card{padding:28px 20px;border-radius:10px}
+      .footer-inner{align-items:flex-start;flex-direction:column}
+    }
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button{transition:none}}
+  </style>
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="../../" aria-label="Vilync Medtech (OPC) Pvt. Ltd. home">
+    <img src="../../assets/vilync-logo.png" alt="Vilync Medtech logo">
+    <span>Vilync Medtech (OPC) Pvt. Ltd.</span>
+  </a>
+  <nav class="nav" aria-label="Main navigation">
+    <a href="../../">Home</a>
+    <a href="../ophthalmology/">Ophthalmology</a>
+    <a href="./" class="active" aria-current="page">General Surgery</a>
+    <a href="../../#contact">Contact</a>
+    <a class="cta" href="../../#enquiry">Make an Enquiry</a>
+  </nav>
+</header>
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <div class="crumb"><a href="../../">Home</a><span>/</span><a href="../../#products">Products</a><span>/</span><b>General Surgery</b></div>
+      <p class="eyebrow">GENERAL SURGERY · DEPARTMENT UPDATE</p>
+      <h1>Expanding Our Surgical Portfolio.<br><em>Coming Soon.</em></h1>
+      <p class="intro">We are working towards expanding our medical and surgical product portfolio to serve the evolving needs of healthcare professionals.</p>
+      <div class="hero-meta"><span>MEDICAL & SURGICAL PRODUCTS</span><i></i><span>PORTFOLIO IN DEVELOPMENT</span></div>
+    </div>
+  </section>
+  <section class="coming-section">
+    <div class="coming-card">
+      <div class="icon-wrap" aria-hidden="true">✚</div>
+      <span class="status">COMING SOON</span>
+      <h2>General Surgery Solutions</h2>
+      <p>Our General Surgery product portfolio is currently under development. Please check back soon for updates.</p>
+      <div class="contact-prompt">
+        <strong>Looking for a specific surgical product or equipment?</strong>
+        <p>Connect with our team to discuss your requirement. We would be glad to hear from you.</p>
+      </div>
+      <div class="actions">
+        <a class="button button-primary" href="../../#enquiry">Contact Our Team <span aria-hidden="true">↗</span></a>
+        <a class="button button-secondary" href="https://wa.me/918188886788?text=Hello%20Vilync%20Medtech%2C%20I%20have%20a%20General%20Surgery%20product%20enquiry." target="_blank" rel="noopener">WhatsApp Enquiry <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer"><div class="footer-inner"><span>© 2026 Vilync Medtech (OPC) Pvt. Ltd. All rights reserved.</span><a href="../../#contact">Contact ViLYNC Medtech ↗</a></div></footer>
+</body>
+</html>
